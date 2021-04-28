@@ -117,7 +117,7 @@ class Brizy_Content_Context {
 		$results = [];
 		if ( isset( $this->placeholders ) ) {
 			foreach ( $this->placeholders as $placeholder ) {
-				if ( $placeholder->getAttr( $key ) === $value ) {
+				if ( $placeholder->getAttr( $key ) == $value ) {
 					$results[] = $placeholder;
 				}
 			}
